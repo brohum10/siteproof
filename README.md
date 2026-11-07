@@ -32,11 +32,11 @@ Options: `--max-pages 8` (1–50), `--timeout-ms 15000` (1,000–60,000), `--bro
 ## How it works
 
 1. Normalize the starting URL and limit navigation to its origin and directory path. For example, `https://example.com/docs/` stays under `/docs/`.
-2. Load each page in Chromium and inspect the **rendered** links and IDs, including content produced by JavaScript. Queue same-origin HTML destinations up to the page limit; count external links without fetching them.
+2. Load each page in Chromium and inspect the **rendered** links and IDs, including content produced by JavaScript. Queue same-origin HTML destinations up to the page limit; count external links without following them. If an internal URL redirects outside the scope, record the navigation as a failure and do not scan the destination.
 3. Record missing fragments, unsafe or empty links, failed same-origin assets, and failed navigations. Non-HTML destinations are checked for navigation failures, then skipped for DOM accessibility rules.
 4. Run axe-core on each HTML page. Store compact rule details and affected selectors, then generate both report formats.
 
-Queries, embedded URL credentials, and mail or phone link values are stripped from saved anchors. The scanner does not authenticate or submit forms. **Review the JSON before publishing a report** because page titles, selectors, and paths can still contain sensitive information.
+Queries, embedded URL credentials, and mail or phone link values are stripped from saved anchors. The scanner does not authenticate or submit forms. A page can still load third-party assets, such as fonts or analytics, and an internal URL may redirect to an external page before SiteProof records the out-of-scope navigation; those requests are not counted as external link checks. **Review the JSON before publishing a report** because page titles, selectors, and paths can still contain sensitive information.
 
 ## Evidence and limits
 

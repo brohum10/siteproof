@@ -65,13 +65,17 @@ export async function auditSite(rawTarget, options = {}) {
           report.navigationIssues.push({ url: next, status: response?.status() ?? "no response" });
           continue;
         }
-        if (!response.headers()["content-type"]?.includes("text/html")) {
-          report.nonHtmlSkipped.push({ url: next, contentType: response.headers()["content-type"] ?? "unknown" });
-          continue;
-        }
         const landed = publicUrl(page.url());
         if (new URL(landed).origin !== scope.origin || !new URL(landed).pathname.startsWith(scope.path)) {
           report.navigationIssues.push({ url: next, status: "redirected outside audit scope" });
+          continue;
+        }
+        if (response.status() >= 300 && response.status() < 400) {
+          report.navigationIssues.push({ url: next, status: "redirect blocked" });
+          continue;
+        }
+        if (!response.headers()["content-type"]?.includes("text/html")) {
+          report.nonHtmlSkipped.push({ url: next, contentType: response.headers()["content-type"] ?? "unknown" });
           continue;
         }
         const dom = await page.evaluate(() => ({
