@@ -1,0 +1,17 @@
+{
+  "name": "siteproof",
+  "version": "1.0.0",
+  "description": "A bounded release audit for rendered links, failed assets, and accessibility checks",
+  "private": true,
+  "bin": { "siteproof": "./src/cli.js" },
+  "scripts": {
+    "test": "node --test",
+    "audit": "node src/cli.js"
+  },
+  "engines": { "node": ">=22" },
+  "type": "module",
+  "dependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "playwright": "1.65.0"
+  }
+}

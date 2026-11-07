@@ -1,0 +1,5 @@
+node_modules/
+siteproof-report/
+examples/local-*/
+examples/portfolio-audit/
+.DS_Store
