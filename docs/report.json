@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "target": "https://brohum10.github.io/soham-portfolio/",
+  "scopePath": "/soham-portfolio/",
+  "scannedAt": "2026-11-07T17:58:48.558Z",
+  "browserVersion": "156.0.8078.80",
+  "limits": {
+    "maxPages": 12,
+    "timeoutMs": 15000
+  },
+  "pages": [
+    {
+      "url": "https://brohum10.github.io/soham-portfolio/",
+      "title": "Soham Jindal — Software Engineer",
+      "ids": [
+        "root",
+        "site-navigation",
+        "main-content",
+        "top",
+        "hero-title",
+        "featured-work",
+        "featured-work-title",
+        "experience",
+        "experience-title",
+        "projects",
+        "projects-title",
+        "principles-title",
+        "skills",
+        "skills-title",
+        "about",
+        "about-title",
+        "contact",
+        "contact-title"
+      ],
+      "anchors": [
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/#top",
+          "text": "SJSoham Jindal"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/#experience",
+          "text": "Experience"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/#projects",
+          "text": "Projects"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/#skills",
+          "text": "Skills"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/#about",
+          "text": "About"
+        },
+        {
+          "href": "https://github.com/brohum10",
+          "text": "GitHub ↗"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/resume.pdf",
+          "text": "Résumé ↗"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/#featured-work",
+          "text": "Explore the work ↓"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/resume.pdf",
+          "text": "View résumé ↗"
+        },
+        {
+          "href": "https://github.com/brohum10",
+          "text": "GitHub ↗"
+        },
+        {
+          "href": "https://www.linkedin.com/in/sohamj2025",
+          "text": "LinkedIn ↗"
+        },
+        {
+          "href": "mailto:[redacted]",
+          "text": "Email ↗"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/#featured-work",
+          "text": "Chronicle LSM StoreInside the build ↘"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/#featured-work",
+          "text": "Scroll to explore ↓"
+        },
+        {
+          "href": "https://github.com/brohum10/chronicle-lsm-store",
+          "text": "Explore Chronicle LSM Store ↗"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/#projects",
+          "text": "Browse all 12 projects ↓"
+        },
+        {
+          "href": "https://github.com/brohum10/llm-incident-response-copilot",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/concurrent-web-crawler",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/chronicle-lsm-store",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/mini-raft-store",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/queuepilot",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/causal-trace-analyzer",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/LumaJournal",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/converge-crdt-board",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/scopeledger",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/harflow-studio",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/relayforge-webhooks",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://github.com/brohum10/planclinic",
+          "text": "View source ↗"
+        },
+        {
+          "href": "https://brohum10.github.io/planclinic/",
+          "text": "Try the live demo ↗"
+        },
+        {
+          "href": "mailto:[redacted]",
+          "text": "Send me an email ↗"
+        },
+        {
+          "href": "https://www.linkedin.com/in/sohamj2025",
+          "text": "Connect on LinkedIn ↗"
+        },
+        {
+          "href": "https://github.com/brohum10",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://www.linkedin.com/in/sohamj2025",
+          "text": "LinkedIn"
+        },
+        {
+          "href": "https://brohum10.github.io/soham-portfolio/resume.pdf",
+          "text": "Résumé"
+        }
+      ],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodeCount": 18
+        },
+        {
+          "id": "color-contrast",
+          "nodeCount": 345
+        }
+      ]
+    }
+  ],
+  "linkIssues": [],
+  "networkIssues": [],
+  "navigationIssues": [],
+  "externalCount": 20,
+  "unverifiedCount": 0,
+  "pagesSkippedByLimit": 0,
+  "nonHtmlSkipped": [
+    {
+      "url": "https://brohum10.github.io/soham-portfolio/resume.pdf",
+      "contentType": "application/pdf"
+    }
+  ],
+  "summary": {
+    "pagesScanned": 1,
+    "axeViolations": 0,
+    "axeNodes": 0,
+    "incomplete": 2,
+    "brokenLinks": 0,
+    "failedRequests": 0,
+    "navigationFailures": 0,
+    "externalLinksSkipped": 20,
+    "fragmentChecksSkipped": 0,
+    "confirmedIssues": 0,
+    "passed": true
+  }
+}
